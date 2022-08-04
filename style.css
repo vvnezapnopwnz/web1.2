@@ -131,6 +131,7 @@ body {
     white-space: nowrap;
     margin: 0 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .service-menu__button:hover {
@@ -161,6 +162,9 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #1B1C21;
+
 }
 
 .service-content__read-icon {
@@ -286,11 +290,16 @@ body {
     .service-menu__list {
         overflow: visible;
         flex-wrap: wrap;
+        margin: 16px 0;
     }
 
     .service-menu__button {
         font-size: 16px;
-        padding: 8px 20px;
+        padding: 10px 20px;
+    }
+
+    .service-menu__button:hover {
+        padding: 8px 18px;
     }
 
     .service-content__img img {
