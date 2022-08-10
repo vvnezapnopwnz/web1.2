@@ -1,134 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__top">
-            <div class="container-thin">
-                <div class="left-menu">
-                    <a class="toggle-nav">
-                        <img src="img/burger.png">
-                    </a>
-                    <div class="left-divider">
-                    </div>
-                    <div class="logo">
-                        <img src="img/Group.png">
-                    </div>
-                </div>
-                <nav class="navigation">
-                    <div class="contact-menu">
-                        <ul class="contact-menu__list">
-                            <li>
-                                <a class="contact-menu__button">
-                                    <img src="img/call.png">
-                                </a>
-                            <li>
-                                <a class="contact-menu__button">
-                                    <img src="img/chat.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="contact-menu__button">
-                                    <img src="img/profile.png">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right-divider">
-                    </div>
-                    <ul class="navigation-list">
-                        <li>
-                            <a class="navigation-button">
-                                <img src="img/repair.png">
-                            </a>
-                        <li>
-                            <a class="navigation-button">
-                                <img src="img/checkstatus.png">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+      <div class="header__top">
+        <div class="container-thin">
+          <div class="left-menu">
+            <button aria-label="Отобразить меню" class="toggle-nav">
+              <img alt="" src="assets/imgs/burger.png" />
+            </button>
+            <div class="left-divider"></div>
+            <div class="logo">
+              <img alt="" src="assets/imgs/Group.png" />
             </div>
+          </div>
+          <nav class="navigation">
+            <div class="contact-menu">
+              <ul class="contact-menu__list">
+                <li>
+                  <button aria-label="Позвонить" class="contact-menu__button">
+                    <img alt="" src="assets/imgs/call.png" />
+                  </button>
+                </li>
+
+                <li>
+                  <button aria-label="Написать нам" class="contact-menu__button">
+                    <img alt="" src="assets/imgs/chat.png" />
+                  </button>
+                </li>
+                <li>
+                  <button aria-label="Профиль" class="contact-menu__button">
+                    <img alt="" src="assets/imgs/profile.png" />
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="right-divider"></div>
+            <ul class="navigation-list">
+              <li>
+                <button aria-label="Ремонт" class="navigation-button">
+                  <img alt="" src="assets/imgs/repair.png" />
+                </button>
+              </li>
+
+              <li>
+                <button aria-label="Проверить" class="navigation-button">
+                  <img alt="" src="assets/imgs/checkstatus.png" />
+                </button>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
     <main class="main">
-        <div class="main-block">
-        <h1 class="main-title">
-            Услуги и сервисы
-        </h1>
-            <div class="main-content">
-                <div class="main-content__repair">
-                    <p>Оставить заявку</p>
-                    <a class="navigation-button">
-                        <img src="img/repair.png">
-                    </a>
-                </div>
-                <div class="main-content__repair">
-                    <p>Статус ремонта</p>
-                    <a class="navigation-button">
-                        <img src="img/checkstatus.png">
-                    </a>
-                </div>
-
-            </div>
+      <div class="main-block">
+        <h1 class="main-title">Услуги и сервисы</h1>
+        <div class="main-content">
+          <div class="main-content__repair">
+            <p>Оставить заявку</p>
+            <button aria-label="Ремонт" class="navigation-button">
+              <img alt="" src="assets/imgs/repair.png" />
+            </button>
+          </div>
+          <div class="main-content__repair">
+            <p>Статус ремонта</p>
+            <button aria-label="Статус ремонта" class="navigation-button">
+              <img alt="" src="assets/imgs/checkstatus.png" />
+            </button>
+          </div>
         </div>
-        <div class="service-menu">
-            <ul class="service-menu__list">
-                <li class="service-menu__item">
-                    <a href="" class="service-menu__button">
-                        Ремонтируемые устройства
-                    </a>
-                </li>
-                <li class="service-menu__item">
-                    <a href="" class="service-menu__button">
-                        Дополнительные услуги
-                    </a>
-                </li>
-                <li class="service-menu__item">
-                    <a href="" class="service-menu__button">
-                        Цены на услуги
-                    </a>
-                </li>
-                <li class="service-menu__item"> 
-                    <a href="" class="service-menu__button">
-                        Адреса сервисных центров
-                    </a>
-                </li>
-                <li class="service-menu__item">
-                    <a href="" class="service-menu__button">
-                        Специальные цены
-                    </a>
-                </li>
-                <li class="service-menu__item">
-                    <a href="" class="service-menu__button">
-                        Отзывы
-                    </a>
-                </li>
-            </ul>
-        </div>    
-        <section class="service-info">
-            <div class="service-content">
-                <p class="service-content__description">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                <br>
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                </p>
-                <a href="" class="service-content__read">
-                    <img class="service-content__read-icon" src="img/expand.jpg">
-                    <p>
-                        Читать далее
-                    </p>
-                </a>
-            </div>
-            <div class="service-content__img">
-                <img src="img/mg.png">
-            </div>
-        </section>
+      </div>
+      <div class="service-menu">
+        <ul class="service-menu__list">
+          <li class="service-menu__item">
+            <a href="" class="service-menu__link">
+              Ремонтируемые устройства
+            </a>
+          </li>
+          <li class="service-menu__item">
+            <a href="" class="service-menu__link" aria-label="Дополнительные услуги" title="Дополнительные услуги"> Дополнительные услуги </a>
+          </li>
+          <li class="service-menu__item">
+            <a href="" class="service-menu__link" aria-label="Цены" title="Перейти к ценам на услуги"> Цены на услуги </a>
+          </li>
+          <li class="service-menu__item">
+            <a href="" class="service-menu__link" aria-label="Адреса" title="Перейти к адресам">
+              Адреса сервисных центров
+            </a>
+          </li>
+          <li class="service-menu__item">
+            <a href="" class="service-menu__link" aria-label="Специальные цены" title="Перейти к ценам"> Специальные цены </a>
+          </li>
+          <li class="service-menu__item">
+            <a href="" class="service-menu__link" aria-label="Страница отзывов" title="Перейти к отзывам"> Отзывы </a>
+          </li>
+        </ul>
+      </div>
+      <section class="service-info">
+        <div class="service-content">
+          <p class="service-content__description">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+            <br />
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <a aria-label="Читать далее" title="Читать далее" href="" class="service-content__read">
+            <img class="service-content__read-icon" src="assets/imgs/expand.jpg" />
+            <p>Читать далее</p>
+          </a>
+        </div>
+        <div class="service-content__img">
+          <img alt="" src="assets/imgs/mg.png" />
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
