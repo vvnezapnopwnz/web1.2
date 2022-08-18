@@ -1,344 +1,339 @@
 @font-face {
-    font-family: 'TT Lakes Medium';
-    src: url('../assets/fonts/TTLakes-Medium.eot');
-    src: url('../assets/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../assets/fonts/TTLakes-Medium.woff') format('woff'),
-    url('../assets/fonts/TTLakes-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-    
-html {
-    box-sizing: border-box;
+  font-family: "TT Lakes Medium";
+  src: url("../assets/fonts/TTLakes-Medium.eot");
+  src: url("../assets/fonts/TTLakes-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Medium.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
+html {
+  box-sizing: border-box;
 }
-    
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-    margin: 0;
-    font-family: "TT Lakes Medium";
+  margin: 0;
+  font-family: "TT Lakes Medium";
 }
 
 .header {
-    border-bottom: 1px solid #D9FFF5;
-    background-color: #ffffff;
+  border-bottom: 1px solid #d9fff5;
+  background-color: #ffffff;
 }
 
 .left-menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .left-divider {
-    display: none;
+  display: none;
 }
 
 .menu-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    box-sizing: border-box;
-    transition: all .4s;
-    border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  transition: all 0.4s;
+  border: none;
 }
 
 .navigation {
-    border-bottom: #D9FFF5;
-    display: flex;
-    align-items: center;
+  border-bottom: #d9fff5;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 .navigation-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navigation-button p {
-    margin-right: 10px;
-    font-family: TT Lakes;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-align: right;
-
-    
+  margin-right: 10px;
+  font-family: TT Lakes;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: right;
 }
 
 .container-thin {
-    margin: 0;
-    padding: 0 10px 0 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0;
+  padding: 0 10px 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-nav {
-    width: 40px;
-    height: 40px;
-    margin: 28px 20px 28px 0;
-    border: none;
-    background: none;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin: 28px 20px 28px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .right-divider {
-    height: 28px;
-    border-left: 2px solid #EAEAEA;;
-    margin: 10px;
-    border-radius: 5px;
+  height: 28px;
+  border-left: 2px solid #eaeaea;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-content {
-    display: none;
+  display: none;
 }
 
 .main-title {
-    padding: 0 12px;
-    padding: 0px 12px;
-    margin: 0;
+  padding: 0 12px;
+  padding: 0px 12px;
+  margin: 0;
 }
 
 .main-block {
-
-    margin: 24px 0;
+  margin: 24px 0;
 }
 
 .main-block:before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 125px;
-    height: 35px;
-    width: 100%;
-    border-left: 3px solid #41F6D7;
-  }
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 125px;
+  height: 35px;
+  width: 100%;
+  border-left: 3px solid #41f6d7;
+}
 
 .service-menu__list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
 }
 
 .service-menu__link {
-    font-family: 'TT Lakes';
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #7E7E82;
-    padding: 8px;
-    display: block;
-    white-space: nowrap;
-    margin: 0 10px;
-    cursor: pointer;
-    text-decoration: none;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  padding: 8px;
+  display: block;
+  white-space: nowrap;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .service-menu__link:hover {
-    background: #FFFFFF;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-    padding: 6px;
-
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  padding: 6px;
 }
 
 .service-info {
-    padding: 0 12px;
-    display: flex;
-    flex-direction: column;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-content {
-    max-width: 520px;
+  max-width: 520px;
 }
 
 .service-content__description {
-    height: 90px;
-    overflow: hidden;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 0;
-    height: 75px;
-    overflow: hidden;
+  height: 90px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  height: 75px;
+  overflow: hidden;
 }
 
 .service-content__read {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    color: #1B1C21;
-
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1b1c21;
 }
 
 .service-content__read-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .contact-menu {
-    display: none
+  display: none;
 }
 
 .service-content__img img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: transparent; 
-    border-radius: 0px;
+  background: transparent;
+  border-radius: 0px;
 }
 
-@media (min-width: 768px) and (max-width: 1120px) { 
+@media (min-width: 768px) and (max-width: 1120px) {
+  body {
+    width: 100%;
+  }
 
-    body {
-        width: 100%;
-    }
+  .contact-menu {
+    display: block;
+  }
 
-    .contact-menu {
-        display: block;
-    }
+  .contact-menu__list {
+    display: flex;
+    list-style: none;
+  }
 
-    .contact-menu__list {
-        display: flex;
-        list-style: none;
-    }
+  .contact-menu__button {
+    margin: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 
-    .contact-menu__button {
-        margin: 5px;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
+  .left-divider {
+    height: 28px;
+    border-left: 2px solid #eaeaea;
+    margin: 10px;
+    border-radius: 5px;
+    display: block;
+  }
 
-    .left-divider {
-        height: 28px;
-        border-left: 2px solid #EAEAEA;;
-        margin: 10px;
-        border-radius: 5px; 
-        display: block;
-    }
+  .service-menu {
+    padding: 0px 24px;
+  }
 
-    .service-menu {
-        padding: 0px 24px;
-    }
+  .service-info {
+    padding: 0px 24px;
+  }
+  .service-info {
+    flex-direction: row;
+  }
 
-    .service-info {
-        padding: 0px 24px;
-    }
-    .service-info {
-        flex-direction: row;
-    }
-
-    .service-content__description {
-        width: 312px;
-        height: 160px;
-        margin-right: 48px;
-    }
-    .service-content__img  {
-        width: 360px;
-    }
-    
+  .service-content__description {
+    width: 312px;
+    height: 160px;
+    margin-right: 48px;
+  }
+  .service-content__img {
+    width: 360px;
+  }
 }
 
- @media all and (min-width: 1120px) and (max-width: 2600px) {
-    body {
-        width: 100%;
-    }
+@media all and (min-width: 1120px) and (max-width: 2600px) {
+  body {
+    width: 100%;
+  }
 
-    .main-block {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
+  .main-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
 
-    .main-block:before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 45px;
-        height: 35px;
-        width: 100%;
-        border-left: 3px solid #41F6D7;
-    }
+  .main-block:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    height: 35px;
+    width: 100%;
+    border-left: 3px solid #41f6d7;
+  }
 
-    .main-title {
-        padding: 0px 20px;
-    }
+  .main-title {
+    padding: 0px 20px;
+  }
 
-    .main-content {
-        display: flex;
-    }
-    
-    .header {
-        display: none;
-    }
+  .main-content {
+    display: flex;
+  }
 
-    .main-content__repair {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        cursor: pointer;
-    }
+  .header {
+    display: none;
+  }
 
-    .service-menu {
-        padding: 0px 32px;
-    }
+  .main-content__repair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
 
-    .service-info {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 50px;
-    }
+  .service-menu {
+    padding: 0px 32px;
+  }
 
-    .service-content__description {
-        height: 140px;
-    }
+  .service-info {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 50px;
+  }
 
-    .service-menu__list {
-        overflow: visible;
-        flex-wrap: wrap;
-        margin: 16px 0;
-    }
+  .service-content__description {
+    height: 140px;
+  }
 
-    .service-menu__link {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
+  .service-menu__list {
+    overflow: visible;
+    flex-wrap: wrap;
+    margin: 16px 0;
+  }
 
-    .service-menu__link:hover {
-        padding: 8px 18px;
-    }
+  .service-menu__link {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
 
-    .service-content__img img {
-        max-width: none;
-    }
-    
- }
+  .service-menu__link:hover {
+    padding: 8px 18px;
+  }
+
+  .service-content__img img {
+    max-width: none;
+  }
+}
