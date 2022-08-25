@@ -1,0 +1,64 @@
+.page-footer {
+  padding: 1rem;
+  border-top: 1px solid #D9FFF5;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: $color-grey;
+  text-align: center;
+  background-color: $color-bg;
+
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 2rem 1.5rem 1rem;
+  }
+  @media (min-width: $screen-xl) {
+    padding: 2rem 2rem 1.5rem;
+  }
+
+  &__item {
+    opacity: .72;
+    transition: all .4s;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    @media (min-width: $screen-md) {
+      max-width: 32%;
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+    &:first-child {
+      @media (min-width: $screen-md) {
+        text-align: left;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      @media (min-width: $screen-md) {
+        text-align: right;
+      }
+    }
+  }
+
+  &__link {
+    &,
+    &:active,
+    &:link,
+    &:focus {
+      text-decoration: none;
+      color: $color-grey;
+      transition: all .4s;
+    }
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: $color-grey;
+    }
+  }
+}

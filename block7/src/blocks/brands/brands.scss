@@ -1,0 +1,93 @@
+.brands {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  &-swiper {
+    background-color: $color-bg;
+    padding: 1rem;
+  }
+
+  &__content {
+    padding-bottom: 2rem;
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1rem;
+      column-gap: 1.5rem;
+      overflow: hidden;
+      padding-left: 0;
+      height: 140px;
+    }
+    @media (min-width: $screen-xl) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 1rem;
+      column-gap: 2rem;
+      overflow: hidden;
+      padding-left: 0;
+      height: 140px;
+    }
+    &--read-more {
+      height: auto;
+    }
+  }
+
+  &-single {
+    display: flex;
+    background: $color-white;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 4.5rem;
+
+    &__button {
+      background: none;
+      border: none;
+    }
+  }
+
+  &__read-more {
+    display: none;
+    border: none;
+    background: none;
+    align-items: center;
+
+    &--icon {
+      background-image: url("../img/brands/more.svg");
+      width: 0.5rem;
+      height: 0.7rem;
+      margin-right: 1rem;
+      background-color: transparent;
+    }
+
+    &--text {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    @media (min-width: $screen-md) and (max-width: $screen-xl) {
+      display: flex;
+      margin-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: $screen-xl) {
+      display: flex;
+      margin-left: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+}
+
+.brand-icon {
+  background-image: url("../img/brands/go.svg");
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+}
+
+

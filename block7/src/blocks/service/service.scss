@@ -1,0 +1,170 @@
+.our-service {
+  padding: 24px 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 145px;
+    height: 35px;
+    border-left: 3px solid #41f6d7;
+    @media (min-width: $screen-xl) {
+      top: 25px;
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+
+  &__options {
+    display: none;
+    @media (min-width: $screen-xl) {
+      display: flex;
+    }
+    button {
+      text {
+        padding-right: 8px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md) and (max-width: $screen-xl) {
+
+  }
+  @media (min-width: $screen-xl) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 0;
+    left: 10px;
+  }
+}
+
+.button__icon {
+  font-family: "TT Lakes Medium", serif;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: $color-pink;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.button__icon-request {
+  background-image: url("../img/repair.svg");
+}
+.button__icon-checkstatus {
+  background-image: url("../img/checkstatus.svg");
+}
+
+.service__link {
+  font-family: "TT Lakes", serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $color-grey;
+  padding: 10px;
+  display: block;
+  white-space: nowrap;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: $color-white;
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+    padding: 8px;
+    @media (min-width: $screen-md) and (max-width: $screen-xl) {
+
+    }
+    @media (min-width: $screen-xl) {
+      padding: 8px 18px;
+    }
+  }
+
+  @media (min-width: $screen-md) and (max-width: $screen-xl) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: $screen-xl) {
+    font-size: 1.2rem;
+
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0px;
+}
+
+.service-info__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  @media (min-width: $screen-md) and (max-width: $screen-xl) {
+
+  }
+  @media (min-width: $screen-xl) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.service-article {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  &__description {
+    height: 130px;
+    overflow: hidden;
+  }
+
+  &__read {
+    text-decoration: none;
+    color: $color-dark;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $screen-md) and (max-width: $screen-xl) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 24px;
+  }
+  @media (min-width: $screen-xl) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 24px;
+  }
+}
+
+.service-content__img {
+  margin: auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
